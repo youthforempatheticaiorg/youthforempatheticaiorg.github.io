@@ -1,106 +1,162 @@
+<!DOCTYPE html>
 <html lang="ts">
 <head>
-<title>Youth for Empathetic AI</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
+  <title>Youth for Empathetic AI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="icon" type="image/x-icon" href="logo.ico">
+  <style>
+    body, h1, h2, h3, h4, h5 {
+      font-family: "Raleway", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 32px;
+    }
+
+    header b {
+      font-size: 70px;
+      color: #E55F68;
+    }
+
+    header h1 {
+      font-size: 35px;
+      color: #333;
+    }
+
+    .mission-card,
+    .ai-card {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .ai-card button {
+      background-color: #E55F68;
+      color: #fff;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-sizing: border-box;
+}
+
+.ai-card button:hover {
+  background-color: #E55F68;
+}
+
+    .newsletter-card {
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .newsletter-card span {
+      font-size: 18px;
+      font-weight: bold;
+      color: #E55F68;
+    }
+
+    .newsletter-card span.date {
+      font-size: 14px;
+      color: #777;
+    }
+
+  .newsletter-card a {
+    text-decoration: none;
+    border-bottom: 2px solid #E55F68;
+    }
+
+  .logo img{
+    max-width: 350px; /* Adjust the maximum width of the logo */
+    max-height: 350px; /* Adjust the maximum height of the logo */
+    height: auto;
+  }
+  </style>
 </head>
-<body class="w3-light-grey">
+<body>
 
-<!-- w3-content defines a container for fixed size centered content, 
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
+<div class="container">
 
-<!-- Header -->
-<header class="w3-container w3-center w3-padding-32 w3-jumbo"> 
-  <b>Youth for Empathetic AI</b>
-  <h1>Commited to AI Education</h1>
-</header>
-
-<!-- Grid -->
-<div class="w3-row">
-
-<!-- Blog entries -->
-<div class="w3-col l8 s12">
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-      <h3><b>Mission Statement</b></h3>
+  <header>
+    <div>
+    <b>Youth for Empathetic AI</b>
+    <h1>Committed to AI Education</h1>
     </div>
-
-    <div class="w3-container">
-      <h3>Youth for Empathetic AI is a youth-led organization that strives to contribute to building a civil cyberspace, champions the integration of empathy in designing AI systems and their applications to online social interactions, and promotes AI education among K-12 students. </p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
-      </div>
+    <div class="logo">
+      <img id="logo" src="YEAI Logo.png">
     </div>
+  </header>
+
+  <div class="mission-card">
+    <h3>Mission Statement</h3>
+    <p>Youth for Empathetic AI is a youth-led organization that strives to contribute to building a civil cyberspace, champions the integration of empathy in designing AI systems and their applications to online social interactions, and promotes AI education among K-12 students.</p>
   </div>
   <hr>
 
-  <!-- Blog entry -->
-  <div class="w3-card-4 w3-margin w3-white">
-    <div class="w3-container">
-      <h3><b>Empathetic AI</b></h3>
-    </div>
-
-    <div class="w3-container">
-      <h3>At the mention of AI, people think of robots like the ones on the assembly line or chatbots like OpenAI’s popular ChatGPT. An Empathetic AI is unlike a robot on the assembly line or a chatbot. It is an AI that has the ability to detect a wide variety of human emotions, and can respond accordingly to these emotions. Empathetic AI has the ability to revolutionize the cyberspace and to allow for civil online interactions, which can benefit the well-being of the future.
-      </p>
-      <div class="w3-row">
-        <div class="w3-col m8 s12">
-          <h3><button onclick="window.location.href='empatheticai.html'" class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-        </div>
-        <div class="w3-col m4 w3-hide-small">
-        </div>
+  <div class="ai-card">
+    <h3>Empathetic AI</h3>
+    <p>At the mention of AI, people think of robots like the ones on the assembly line or chatbots like OpenAI’s popular ChatGPT. An Empathetic AI is unlike a robot on the assembly line or a chatbot. It is an AI that has the ability to detect a wide variety of human emotions and can respond accordingly to these emotions. Empathetic AI has the ability to revolutionize the cyberspace and to allow for civil online interactions, which can benefit the well-being of the future.</p>
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <h3><button onclick="window.location.href='empatheticai.html'"><b>READ MORE »</b></button></h3>
       </div>
+      <div class="w3-col m4 w3-hide-small"></div>
     </div>
   </div>
-<!-- END BLOG ENTRIES -->
-</div>
 
-<!-- Introduction menu -->
-<div class="w3-col l4">
-  
-  <!-- Posts -->
-  <div class="w3-card w3-margin">
-    <div class="w3-container">
-      <h3>Newsletters</h4>
+  <div class="w3-col l4">
+    <div class="newsletter-card">
+      <a href="cocolabideathon.html">
+      <span id="cocolabideathon">Coco Lab Ideathon</span><br>
+      </a>
+      <span class="date">May 13th, 2023</span>
     </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-button">
-        <span onclick="window.location.href='cocolabideathon.html'"class="w3-xlarge">Coco Lab Ideathon</span><br>
-        <span>May 13th, 2023</span>
-      </li>
-      <li class="w3-button">
-        <span onclick="window.location.href='aclconference.html'"class="w3-xlarge">ACL 2023 Conference</span><br>
-        <span>July 9th, 2023 - July 14th, 2023</span>
-      </li>
-      <li class="w3-button">
-        <span onclick="window.location.href='yeaigoogleoutreachevent.html'"class="w3-xlarge">YEAI Google Outreach Event</span><br>
-        <span>August 10th, 2023</span>
-      </li>
-      <li class="w3-button">
-        <span onclick="window.location.href='endofyearnewsletter.html'"class="w3-xlarge">End of Year Newsletter</span><br>
-        <span>December 31st, 2023</span>
-      </li>
-    </ul>
+
+    <div class="newsletter-card">
+      <a href="aclconference.html">
+      <span id="acl2023conference">ACL 2023 Conference</span><br>
+      </a>
+      <span class="date">July 9th, 2023 - July 14th, 2023</span>
+    </div>
+
+    <div class="newsletter-card">
+      <a href="yeaigoogleoutreachevent.html">
+      <span id="yeaigoogleoutreachevent">YEAI Google Outreach Event</span><br>
+      </a>
+      <span class="date">August 10th, 2023</span>
+    </div>
+
+    <div class="newsletter-card">
+      <a href="endofyearnewsletter.html">
+      <span id="endofyearnewsletter">End of Year Newsletter</span><br>
+      </a>
+      <span class="date">December 31st, 2023</span>
+    </div>
   </div>
-  <hr> 
 
-<!-- END Introduction Menu -->
 </div>
 
-<!-- END GRID -->
-</div><br>
-
-<!-- END w3-content -->
-</div>
 </body>
 </html>
